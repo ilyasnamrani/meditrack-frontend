@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Sensitive files
+.env
+.env.*
+*.pem
+*.key
+certs/
+secrets/

@@ -1,2 +1,0 @@
-﻿src/pages/Register.tsx(12,10): error TS6133: 'searchParams' is declared but its value is never read.
-src/pages/StaffPatients.tsx(2,64): error TS6133: 'CalendarIcon' is declared but its value is never read.
