@@ -1,0 +1,10 @@
+﻿
+> meditrack-frontend@0.0.0 lint
+> eslint .
+
+
+C:\Users\dell\OneDrive\Bureau\meditrack\meditrack-frontend\src\pages\Register.tsx
+  4:23  error  'useSearchParams' is defined but never used  @typescript-eslint/no-unused-vars
+
+Ô£û 1 problem (1 error, 0 warnings)
+

@@ -1,0 +1,40 @@
+﻿
+> meditrack-frontend@0.0.0 lint
+> eslint .
+
+
+C:\Users\dell\OneDrive\Bureau\meditrack\meditrack-frontend\src\pages\PatientLogin.tsx
+  37:23  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\dell\OneDrive\Bureau\meditrack\meditrack-frontend\src\pages\Register.tsx
+  12:9   error  Unexpected empty array pattern            no-empty-pattern
+  46:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\dell\OneDrive\Bureau\meditrack\meditrack-frontend\src\pages\StaffDashboard.tsx
+  48:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\dell\OneDrive\Bureau\meditrack\meditrack-frontend\src\pages\StaffPatients.tsx
+  43:9   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\dell\OneDrive\Bureau\meditrack\meditrack-frontend\src\pages\StaffPatients.tsx:43:9
+  41 |
+  42 |     useEffect(() => {
+> 43 |         fetchPatients();
+     |         ^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  44 |     }, []);
+  45 |
+  46 |     const handleDelete = async (id: number) => {  react-hooks/set-state-in-effect
+  53:18  error  'err' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+  73:18  error  'err' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+
+C:\Users\dell\OneDrive\Bureau\meditrack\meditrack-frontend\src\services\keycloak.ts
+  31:20  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+Ô£û 8 problems (8 errors, 0 warnings)
+
